@@ -1,0 +1,13 @@
+{
+    "name": "@myorgaberesov/react-layout",
+    "version": "0.1.0",
+    "main": "dist/index.js",
+    "files": ["dist"],
+    "scripts": {
+      "build": "babel src --out-dir dist"
+    },
+    "peerDependencies": {
+      "react": ">=17",
+      "react-dom": ">=17"
+    }
+  }
