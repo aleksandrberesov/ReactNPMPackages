@@ -1,0 +1,29 @@
+{
+    "name": "@aberesov/react-button",
+    "version": "2.0.1",
+    "main": "dist/index.js",
+    "module": "dist/index.es.js",
+    "types": "dist/index.d.ts",
+    "scripts": {
+        "build": "vite build",
+        "locallink": "npm link"
+    },
+    "peerDependencies": {
+        "react": "^18.0.0",
+        "react-dom": "^18.0.0"
+    },
+    "description": "A minimal React button component.",
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "type": "commonjs",
+    "devDependencies": {
+        "@types/react": "^19.2.14",
+        "@vitejs/plugin-react": "^6.0.1",
+        "react": "^18.0.0",
+        "react-dom": "^18.0.0",
+        "typescript": "^6.0.2",
+        "vite": "^8.0.3",
+        "@types/react-dom": "^18.0.0"
+    }
+}
