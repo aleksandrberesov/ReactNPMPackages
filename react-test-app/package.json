@@ -1,13 +1,14 @@
 {
-  "name": "integration-test-app",
-  "version": "0.1.0",
+  "name": "react-test-app",
+  "version": "1.0.0",
   "private": true,
   "type": "module",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "update-version": "npm version major"
   },
   "dependencies": {
     "@aberesov/react-button": "latest",
