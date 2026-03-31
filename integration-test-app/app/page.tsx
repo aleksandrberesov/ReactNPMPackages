@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 
 import { Button as NewButton } from "@aberesov/react-button";
@@ -63,9 +65,9 @@ export default function Home() {
         </div>
         <NewButton 
           label="New Button" 
-          onClick={()=>{
-            alert('Button clicked!')
-          }}  
+          onClick={
+            () => alert("New Button Clicked!")
+          }  
         />    
       </main>
     </div>

@@ -7,7 +7,8 @@ export default defineConfig({
     lib: {
       entry: "src/index.ts",
       name: "MyButtonLib",
-      fileName: (format) => `my-button-lib.${format}.js`
+      formats: ["es", "cjs", "umd"],
+      fileName: (format) => `index.${format}.js`
     },
     rollupOptions: {
       external: ["react", "react-dom"],
