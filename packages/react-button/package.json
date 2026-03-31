@@ -1,29 +1,39 @@
 {
     "name": "@aberesov/react-button",
-    "version": "2.0.1",
-    "main": "dist/index.js",
-    "module": "dist/index.es.js",
+    "version": "3.1.2",
+    "main": "dist/my-button-lib.cjs.js",
+    "module": "dist/my-button-lib.es.js",
     "types": "dist/index.d.ts",
+    "exports": {
+        ".": {
+            "import": "./dist/my-button-lib.es.js",
+            "require": "./dist/my-button-lib.cjs.js",
+            "types": "./dist/index.d.ts"
+        }
+    },
     "scripts": {
-        "build": "vite build",
+        "build": "vite build && tsc",
         "locallink": "npm link"
     },
     "peerDependencies": {
-        "react": "^18.0.0",
-        "react-dom": "^18.0.0"
+        "react": "^19.2.4",
+        "react-dom": "^19.2.4"
+    },
+    "devDependencies": {
+        "@tailwindcss/postcss": "^4",
+        "@types/node": "^20",
+        "@types/react": "^19",
+        "@types/react-dom": "^19",
+        "@vitejs/plugin-react": "^6.0.1",
+        "eslint": "^9",
+        "eslint-config-next": "16.2.1",
+        "tailwindcss": "^4",
+        "typescript": "^6.0.2",
+        "vite": "^8.0.3"
     },
     "description": "A minimal React button component.",
     "keywords": [],
     "author": "",
     "license": "ISC",
-    "type": "commonjs",
-    "devDependencies": {
-        "@types/react": "^19.2.14",
-        "@vitejs/plugin-react": "^6.0.1",
-        "react": "^18.0.0",
-        "react-dom": "^18.0.0",
-        "typescript": "^6.0.2",
-        "vite": "^8.0.3",
-        "@types/react-dom": "^18.0.0"
-    }
+    "type": "commonjs"
 }

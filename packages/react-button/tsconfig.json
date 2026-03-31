@@ -1,17 +1,15 @@
 {
   "compilerOptions": {
-    "target": "ES2020",
-    "module": "ESNext",
-    "moduleResolution": "node",
+    "rootDir": "./src",              // <-- explicitly set source root
+    "outDir": "./dist",              // compiled JS + .d.ts go here
+    "declaration": true,
+    "declarationDir": "./dist",
+    "emitDeclarationOnly": false,
     "jsx": "react-jsx",
-    "strict": true,
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "outDir": "dist"
+    "target": "ESNext",
+    "module": "ESNext"
   },
-  "include": ["src/**/*"],
-  "exclude": ["node_modules", "dist"]
+  "include": ["src"]
 }
+
+

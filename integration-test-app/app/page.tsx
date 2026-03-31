@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-//import { Button as NewButton } from "my-button-lib";
+import { Button as NewButton } from "@aberesov/react-button";
 
 export default function Home() {
   return (
@@ -61,7 +61,12 @@ export default function Home() {
             Documentation
           </a>
         </div>
-              
+        <NewButton 
+          label="New Button" 
+          onClick={()=>{
+            alert('Button clicked!')
+          }}  
+        />    
       </main>
     </div>
   );
